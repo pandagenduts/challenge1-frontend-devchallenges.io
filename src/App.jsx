@@ -1,19 +1,27 @@
-// import './App.css'
-
-import Navigation from "./component/Navigation/Navigation"
-import Button from "./component/UI/Button"
-import ButtonPage from "./pages/ButtonPage/ButtonPage"
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Layout from "./component/UI/Layout";
+import ButtonPage from "./pages/Button";
+import InputPage from "./pages/Input";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "button",
+          element: <ButtonPage />,
+        },
+        {
+          path: "input",
+          element: <InputPage />,
+        },
+      ],
+    },
+  ]);
 
-  return (
-    <div className="flex flex-col web-wrapper md:flex-row">
-      <Navigation />
-      <main className="w-full bg-slate-400">
-        <ButtonPage />
-      </main>
-    </div>
-  )
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
-export default App
+export default App;
