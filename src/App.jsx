@@ -10,7 +10,7 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path: "button",
+          path: "buttons",
           element: <ButtonPage />,
         },
         {

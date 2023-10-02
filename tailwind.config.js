@@ -6,7 +6,17 @@ export default {
   ],
   theme: {
     extend: {
-      
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        notosansjp: ['Noto Sans JP', 'sans-serif'],
+        ubuntumono: ['Ubuntu Mono', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
+      colors: {
+        'FAFBFD': '#FAFBFD',
+        'A9A9A9': '#A9A9A9',
+        '4F4F4F': '#4F4F4F'
+      },
     },
   },
   plugins: [],

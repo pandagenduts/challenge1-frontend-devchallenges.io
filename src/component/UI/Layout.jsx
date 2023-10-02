@@ -8,7 +8,7 @@ const Layout = () => {
   
   useEffect(() => {
     if(location.pathname === '/') {
-      navigate('/button')
+      navigate('/buttons')
     }
   })
 
@@ -16,7 +16,7 @@ const Layout = () => {
     <>
       <div className="flex flex-col web-wrapper md:flex-row">
         <Navigation />
-        <main className="w-full min-h-screen bg-slate-400">
+        <main className="w-full min-h-screen px-4 pt-6 pb-4 md:pt-14">
           <Outlet />
         </main>
       </div>
