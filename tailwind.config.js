@@ -15,7 +15,9 @@ export default {
       colors: {
         'FAFBFD': '#FAFBFD',
         'A9A9A9': '#A9A9A9',
-        '4F4F4F': '#4F4F4F'
+        '4F4F4F': '#4F4F4F',
+        'E0E0E0': '#E0E0E0',
+        'AEAEAE': '#AEAEAE'
       },
     },
   },

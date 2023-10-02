@@ -2,7 +2,7 @@ const Button = (props) => {
 
   return (
     <button
-      className='bg-[#E0E0E0] rounded-md hover:bg-[#AEAEAE] duration-300 px-4 py-2'
+      className='px-4 py-2 duration-300 rounded-md bg-E0E0E0 hover:bg-AEAEAE'
       disabled={props.disabled}
 
     >
