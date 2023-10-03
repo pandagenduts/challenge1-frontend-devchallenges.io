@@ -9,7 +9,7 @@ const ButtonPage = () => {
       <div className="flex flex-col gap-11">
         {buttonDatas.map((row, index) => (
           <div
-            className={`flex flex-wrap ${
+            className={`flex flex-wrap gap-11 ${
               index + 1 === buttonDatas.length && "items-end"
             }`}
             key={index}
