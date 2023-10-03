@@ -1,4 +1,3 @@
-import Reusable from "../../component/UI/Reusable";
 import Button from "../../component/ui/Button";
 
 // each array inside represent each row
@@ -92,144 +91,18 @@ const ButtonPage = () => {
       </h1>
       <div className="flex flex-col gap-11">
         {buttonDatas.map((row) => (
-          <div className="flex flex-wrap">
+          <div className={`flex flex-wrap`}>
             {row.map(item => (
             <div>
-              <p className="text-xs font-normal text-000">{item.title}</p>
+              <p className="mb-3 text-xs font-normal text-000">{item.title}</p>
               {item.element}
             </div>
             ))}
 
           </div>
         ))}
+        <p className="text-xs font-ubuntumono text-828282">Icons: https://material.io/resources/icons/?style=round</p>
       </div>
-
-      {/* <div className="flex flex-col gap-11">
-        <div className="flex flex-wrap">
-          <div>
-            <p className="text-xs font-normal text-000">{"<Button />"}</p>
-            <Button>Default</Button>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap">
-          <div>
-            <p className="text-xs font-normal text-000">
-              {'<Button variant="outline" />'}
-            </p>
-            <Button variant="outline">Default</Button>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap">
-          <div>
-            <p className="text-xs font-normal text-000">
-              {'<Button variant="text" />'}
-            </p>
-            <Button variant="text">Default</Button>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap">
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button disableShadow />"}
-            </p>
-            <Button disableShadow>Default</Button>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap">
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button disabled/>"}
-            </p>
-            <Button disabled>Disabled</Button>
-          </div>
-          <div>
-            <p className="text-xs font-normal text-000">
-              {'<Button variant="text" disabled/>'}
-            </p>
-            <Button disabled variant="text">
-              Disabled
-            </Button>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap">
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button startIcon=”local_grocery_store”/>"}
-            </p>
-            <Button startIcon="add_shopping_cart">Disabled</Button>
-          </div>
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button endIcon=”local_grocery_store”/>"}
-            </p>
-            <Button endIcon="add_shopping_cart">Default</Button>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap">
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button size=”sm” />"}
-            </p>
-            <Button size="sm" color="primary">
-              Default
-            </Button>
-          </div>
-
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button size=”md” />"}
-            </p>
-            <Button size="md" color="primary">
-              Default
-            </Button>
-          </div>
-
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button size=”lg” />"}
-            </p>
-            <Button size="lg" color="primary">
-              Default
-            </Button>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap">
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button color=”default” />"}
-            </p>
-            <Button color="default">Default</Button>
-          </div>
-
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button color=”primary” />"}
-            </p>
-            <Button color="primary">Primary</Button>
-          </div>
-
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button color=”secondary” />"}
-            </p>
-            <Button color="secondary">Secondary</Button>
-          </div>
-
-          <div>
-            <p className="text-xs font-normal text-000">
-              {"<Button color=”danger” />"}
-            </p>
-            <Button color="danger">Danger</Button>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };

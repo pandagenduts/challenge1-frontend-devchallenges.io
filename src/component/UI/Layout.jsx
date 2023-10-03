@@ -18,6 +18,7 @@ const Layout = () => {
         <Navigation />
         <main className="w-full min-h-screen px-4 pt-6 pb-4 md:pt-14">
           <Outlet />
+          <p className="font-montserrat text-A9A9A9 mt-[34px]">created by <a href="#" target="_blank" className="font-bold underline">Donny Rendi</a> - devChallenges.io</p>
         </main>
       </div>
     </>
