@@ -6,7 +6,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        text: "!bg-transparent !shadow-none text-3D5AFE hover:bg-EAF0FF",
+        text: "!bg-transparent !shadow-none text-3D5AFE hover:!bg-EAF0FF",
         outline:
           "bg-white hover:bg-EAF0FF border-1 border border-3D5AFE shadow-none text-3D5AFE",
       },
@@ -20,7 +20,7 @@ const buttonVariants = cva(
         primary: "bg-2962FF hover:bg-0039CB text-white",
         secondary: "bg-455A64 hover:bg-1C313A text-white",
         danger: "bg-D32F2F hover:bg-9A0007 text-white",
-      },
+      }
     },
     defaultVariants: {
       size: "md",
