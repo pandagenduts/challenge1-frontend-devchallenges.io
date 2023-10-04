@@ -16,7 +16,7 @@ const inputDatas = [
       id: 2,
       title: "&:hover",
       titlePseudo: true,
-      element: <Input />,
+      element: <Input multiline />,
     },
     {
       id: 3,

@@ -34,22 +34,28 @@ const Input = (props) => {
     startIcon || (endIcon && "")
   );
 
-  let inputType = "text";
-  if (multiline) {
-    inputType = "textarea";
-  }
-
   return (
     <p className="flex flex-col">
       <label htmlFor="inputComponent">Test!</label>
-      <input
-        type={inputType}
-        placeholder="placeholder"
-        id="inputComponent"
-        name="inputComponent"
-        defaultValue={value}
-        className={inputClasses}
-      />
+      {multiline ? (
+        <textarea
+          type="text"
+          placeholder="placeholder"
+          id="inputComponent"
+          name="inputComponent"
+          defaultValue={value}
+          className={inputClasses}
+        />
+      ) : (
+        <input
+          type="text"
+          placeholder="placeholder"
+          id="inputComponent"
+          name="inputComponent"
+          defaultValue={value}
+          className={inputClasses}
+        />
+      )}
       {helperText && <span>{helperText}</span>}
     </p>
   );
