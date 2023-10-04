@@ -1,6 +1,7 @@
 import { cva } from "class-variance-authority";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import { clsx } from "clsx";
 
 const inputVariants = cva(
   "py-[18px] px-3 outline outline-1 outline-[#828282] hover:outline-[#333] focus:outline-[#2962FF] duration-150 rounded-lg",
@@ -40,22 +41,35 @@ const Input = (props) => {
     row,
     multiline,
     className,
+    labelClassName,
   } = props;
 
   const inputClasses = twMerge(
     inputVariants({ size, className }),
     "",
-    error && "",
+    error && "outline-[#D32F2F] focus:outline-[#D32F2F] hover:outline-[#333]",
     disabled && "",
     fullwidth && "",
     startIcon || (endIcon && "")
   );
 
+  console.log(labelClassName);
+
   return (
-    <p className="flex flex-col gap-1">
+    <p
+      className={`flex flex-col gap-1 input-wrapper ${
+        error ? "input-error" : ""
+      }`}
+    >
       <label
         htmlFor="inputComponent"
-        className={`text-xs text-333 ${isInputFocused && 'text-[#2962FF]'}`}
+        className={`text-xs text-333 duration-150 ${
+          isInputFocused && !error ? "!text-[#2962FF]" : ""
+        } 
+        ${error ? "text-[#D32F2F]" : ""}
+        ${isInputFocused && error ? 'text-[#333]' : ''}
+        ${labelClassName ? labelClassName : ""}
+        `}
       >
         Label
       </label>
