@@ -37,7 +37,7 @@ const Input = (props) => {
     startIcon,
     endIcon,
     size,
-    fullwidth,
+    fullWidth,
     row,
     multiline,
     className,
@@ -48,7 +48,7 @@ const Input = (props) => {
     inputVariants({ size, className }),
     error && "outline-[#D32F2F] focus:outline-[#D32F2F] hover:outline-[#333]",
     disabled && "cursor-not-allowed outline-[#E0E0E0]",
-    fullwidth && "",
+    fullWidth && "w-full",
     startIcon && 'pl-11',
     endIcon && 'pr-11',
 
@@ -59,7 +59,6 @@ const Input = (props) => {
       "text-xs text-333 duration-150",
       isInputFocused && !error && "!text-[#2962FF]",
       error && "text-[#D32F2F]",
-      // isInputFocused && error && "text-[#333]",
       labelClassName && labelClassName
     )
   );
@@ -69,7 +68,7 @@ const Input = (props) => {
   );
 
   return (
-    <p
+    <div
       className={`flex flex-col gap-1 input-container ${
         error ? "input-error" : ""
       }`}
@@ -105,10 +104,10 @@ const Input = (props) => {
             disabled={disabled}
           />
         )}
-        {endIcon && <span className="absolute right-0 text-xl material-icons top-4 right-3 text-828282">{endIcon}</span>}
+        {endIcon && <span className="absolute text-xl material-icons top-4 right-3 text-828282">{endIcon}</span>}
       </div>
       {helperText && <span className={helperTextClasses}>{helperText}</span>}
-    </p>
+    </div>
   );
 };
 
