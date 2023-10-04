@@ -19,11 +19,11 @@ h1, h2, h3, h4, h5, h6 {
   /* font-size: 16px; */
 }
 
-.input-wrapper:hover label {
+.input-container:hover label {
   color: #333;
 }
 
-.input-wrapper.input-error:hover label {
+.input-container.input-error:hover label {
   color: #333;
 } 
 

@@ -54,6 +54,64 @@ const inputDatas = [
       ),
     },
   ],
+  [
+    {
+      id: 7,
+      title: "<Input disabled />",
+      element: <Input disabled />,
+    },
+  ],
+  [
+    {
+      id: 8,
+      title: "<Input helperText=”Some interesting text” />",
+      element: <Input helperText='Some interesting text' />,
+    },
+    {
+      id: 9,
+      title: "<Input helperText=”Some interesting text” error />",
+      element: <Input helperText='Some interesting text' error />,
+    },
+  ],
+  [
+    {
+      id: 10,
+      title: "<Input startIcon />",
+      element: <Input startIcon='call' />,
+    },
+    {
+      id: 11,
+      title: "<Input endIcon />",
+      element: <Input endIcon='lock' />,
+    },
+  ],
+  [
+    {
+      id: 12,
+      title: "<Input value=”Text” />",
+      element: <Input value='Text' />,
+    },
+  ],
+  [
+    {
+      id: 13,
+      title: "<Input size=”sm” />",
+      element: <Input size='sm' />,
+    },
+    {
+      id: 14,
+      title: "<Input size=”md” />",
+      element: <Input size='md' />,
+    },
+  ],
+  [
+    {
+      id: 15,
+      title: "<Input fullWidth  />",
+      element: <Input fullWidth />,
+    },
+  ],
+
 ];
 
 export default inputDatas;
