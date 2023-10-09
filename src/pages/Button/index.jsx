@@ -9,7 +9,7 @@ const ButtonPage = () => {
       <div className="flex flex-col gap-11">
         {buttonDatas.map((row, index) => (
           <div
-            className={`flex flex-wrap ${
+            className={`flex flex-wrap gap-11 ${
               index + 1 === buttonDatas.length && "items-end"
             }`}
             key={index}
@@ -18,8 +18,8 @@ const ButtonPage = () => {
               <div key={item.id}>
                 {item.title && (
                   <p
-                    className={`mb-3 text-xs font-normal text-000 ${
-                      item.titlePseudo && "text-828282 font-ubuntumono"
+                    className={`mb-3 text-xs font-normal text-000 font-ubuntumono ${
+                      item.titlePseudo && "text-828282"
                     }`}
                   >
                     {item.title}
