@@ -9,7 +9,7 @@ const InputPage = () => {
         Inputs
       </h1>
       {inputDatas.map((row, index) => (
-        <div className={index === 7 ? 'mb-6' : 'flex flex-wrap gap-16 mb-6'} key={index}>
+        <div className={index === 7 ? 'mb-6' : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-6'} key={index}>
           {row.map((item) => (
             <div key={item.id}>
               {item.title && (
