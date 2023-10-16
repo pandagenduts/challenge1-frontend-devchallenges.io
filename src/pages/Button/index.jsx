@@ -9,7 +9,7 @@ const ButtonPage = () => {
       <div className="flex flex-col gap-11">
         {buttonDatas.map((row, index) => (
           <div
-            className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ${
+            className={`grid grid-cols-1 verySmall:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ${
               index + 1 === buttonDatas.length && "items-end"
             }`}
             key={index}
@@ -30,29 +30,6 @@ const ButtonPage = () => {
             ))}
           </div>
         ))}
-        {/* {buttonDatas.map((row, index) => (
-          <div
-            className={`flex flex-wrap gap-11 ${
-              index + 1 === buttonDatas.length && "items-end"
-            }`}
-            key={index}
-          >
-            {row.map((item) => (
-              <div key={item.id}>
-                {item.title && (
-                  <p
-                    className={`mb-3 text-xs font-normal text-000 font-ubuntumono ${
-                      item.titlePseudo && "text-828282"
-                    }`}
-                  >
-                    {item.title}
-                  </p>
-                )}
-                {item.element}
-              </div>
-            ))}
-          </div>
-        ))} */}
         <p className="text-xs font-ubuntumono text-828282">
           Icons: https://material.io/resources/icons/?style=round
         </p>

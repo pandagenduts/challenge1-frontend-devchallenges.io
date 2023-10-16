@@ -15,6 +15,9 @@ export default {
       boxShadow: {
         normal: '0px 2px 3px 0px rgba(51, 51, 51, 0.20)'
       },
+      screens: {
+        verySmall: '400px',
+      },
       colors: {
         'FAFBFD': '#FAFBFD',
         'A9A9A9': '#A9A9A9',
